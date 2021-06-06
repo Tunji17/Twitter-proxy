@@ -90,6 +90,8 @@ exports.route = function (app) {
                 apiKey: config.apiKey,
                 apiSecret: config.apiSecret
             };
+            console.log('proxyConfig', proxyConfig);
+            console.log('client', client);
         // Prozy the request onward to Twitter. The OAuth parcel is created in
         // proxyRequest, and cached for later.
         // method, path, config, req, client
